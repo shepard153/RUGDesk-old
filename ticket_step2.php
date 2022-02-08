@@ -6,11 +6,6 @@ $dzial = $_GET['dzial'];
 $ipaddress = $_SERVER['REMOTE_ADDR'];
 $domain = gethostbyaddr($ipaddress);
 
-if (strpos($domain, ".carcgl.com"))
-{
-    $domain = str_replace(".carcgl.com", "", $domain);
-}
-
 if(isset($_POST['submit'])) {
                     
     $status = 0;
