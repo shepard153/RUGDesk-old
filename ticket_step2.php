@@ -203,27 +203,27 @@ if(isset($_POST['submit'])) {
         function check() {
             if (val() == true){$("#stanowiskoSelect").removeAttr("disabled");}
 
-            robole = ["Komory", "Linia montażowa", "Collaudo", "Gwarancje", "Pakowanie", "Pozostałe stanowiska komputerowe"];
-            robole2 = ["Grupy hydrauliczne", "Panele", "Pozostałe stanowiska komputerowe"];
-            robole3 = ["Linia montażowa", "Pakowanie", "Pozostałe stanowiska komputerowe"];
+            produkcja = ["Komory", "Linia montażowa", "Collaudo", "Gwarancje", "Pakowanie", "Pozostałe stanowiska komputerowe"];
+            produkcja2 = ["Grupy hydrauliczne", "Panele", "Pozostałe stanowiska komputerowe"];
+            produkcja3 = ["Linia montażowa", "Pakowanie", "Pozostałe stanowiska komputerowe"];
             magazynierzy = ["Magazyn dostaw", "Magazyn hurtownia", "Magazyn spedycje", "Pozostałe stanowiska komputerowe"];
             zieloni = ["Laboratorium", "Jakość", "Pomiary 3D", "Pozostałe stanowiska komputerowe"];
             biura = ["Gwarancje", "Biura", "Pozostałe stanowiska komputerowe"];
-            czajkoispolka = ["Logistyka", "Pozostałe stanowiska komputerowe"];
-            konserwy = ["Utrzymanie ruchu", "Pozostałe stanowiska komputerowe"];
-            nunczaki = ["Tempimetodi", "Pozostałe stanowiska komputerowe"];
+            logistyka = ["Logistyka", "Pozostałe stanowiska komputerowe"];
+            utrzymanie = ["Utrzymanie ruchu", "Pozostałe stanowiska komputerowe"];
+            tempimetodi = ["Tempimetodi", "Pozostałe stanowiska komputerowe"];
             pozostałe = ["Pozostałe stanowiska komputerowe"];
 
             obszar = document.getElementById("liniaSelect").value;
 
             if (obszar == "Linia 1" || obszar == "Linia 2" || obszar == "Linia 3" || obszar == "Linia 4" || obszar == "Linia 5" || obszar == "RUG2" || obszar == "RUG3"){
-                stanowiskoFill(robole);
+                stanowiskoFill(produkcja);
             }
             else if (obszar == "Panele"){
-                stanowiskoFill(robole2);                
+                stanowiskoFill(produkcja2);                
             }
             else if (obszar == "Przedmontaże"){
-                stanowiskoFill(robole3);                
+                stanowiskoFill(produkcja3);                
             }
             else if (obszar == "Magazyn"){
                 stanowiskoFill(magazynierzy);                
@@ -235,16 +235,16 @@ if(isset($_POST['submit'])) {
                 stanowiskoFill(biura);                
             }
             else if (obszar == "Logistyka"){
-                stanowiskoFill(czajkoispolka); 
+                stanowiskoFill(logistyka); 
             }
             else if (obszar == "Utrzymanie ruchu"){
-                stanowiskoFill(konserwy); 
+                stanowiskoFill(utrzymanie); 
             }
             else if (obszar == "Tempimetodi"){
-                stanowiskoFill(nunczaki); 
+                stanowiskoFill(tempimetodi); 
             }
             else{
-                stanowiskoFill(nunczaki); 
+                stanowiskoFill(tempimetodi); 
             }            
         }
 
