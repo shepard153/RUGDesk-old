@@ -1,5 +1,5 @@
 <?php
-$serverName = "PLTR-10-107-D";
+$serverName = "localhost";
 $database = "HELPDESK";
 $uid = "aplikacja";
 $pwd = "Start.2021";
